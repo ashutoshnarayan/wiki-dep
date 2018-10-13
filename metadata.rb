@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'All Rights Reserved'
 description 'Installs/Configures lamp'
 long_description 'Installs/Configures lamp'
-version '0.1.8'
+version '0.2.1'
 chef_version '>= 13.0'
 
 depends	'mysql', '~> 8.5.1'

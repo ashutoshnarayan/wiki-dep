@@ -18,6 +18,13 @@ node["lamp"]["sites"].each do |sitename, data|
     recursive true
     action :create
   end
+
+  directory '/etc/httpd/sites-available' do
+    mode '0755'
+    recursive true
+    action :create
+  end
+
   directory "/var/www/html/#{sitename}/public_html" do
     action :create
   end
