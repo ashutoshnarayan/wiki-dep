@@ -20,17 +20,3 @@ execute "setup_mysqldb" do
   command "sh /tmp/mysql_setup.sh"
 end
 
-#script 'mysql_setup' do
-#  interpreter "bash"
-#  user 'root'
-#  cwd "/tmp"
-#  code <<-EOH
-#    PASS=`pwgen -s 40 1`
-#    mysql -u root <<MY_Q
-#    CREATE DATABASE wikidatabase1;
-#    CREATE USER 'wiki2'@'localhost' IDENTIFIED BY '$PASS';
-#    GRANT ALL PRIVILEGES ON wikidatabase1.* TO 'wiki2'@'localhost';
-#    FLUSH PRIVILEGES; 
-#    MY_Q
-#  EOH
-#end
